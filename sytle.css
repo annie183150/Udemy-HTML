@@ -39,8 +39,15 @@ button {
   text-align: center;
   background-color: chocolate;
   position: fixed;
-  bottom: 5;
+  bottom: 0;
 }
 .foot div {
   margin-top: auto;
 }
+table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 20px;
+        }
