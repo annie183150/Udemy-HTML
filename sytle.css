@@ -59,6 +59,7 @@
   flex: 3 1 800px;
   border: 3px solid rgb(88, 162, 211);
   margin: 20px 20px;
+  padding: 50px;
 }
 /* 將right設成flex container，flex-diraction:colim 就可以垂直排列標籤內容 align-item跟排列方式垂直的方向位置*/
 .right {
@@ -68,6 +69,23 @@
   flex: 1 1 300px;
   border: 3px solid rgb(156, 185, 25);
   margin: 20px 20px;
+  padding: 50px 20px;
+}
+.right img {
+  transition: transform 1s ease;
+  width: 400px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(31, 34, 46);
+  overflow: hidden;
+}
+.right img:hover {
+  position: relative;
+  top: 5px;
+  transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+}
 }
 /* 水平方向的flex-diration則設align-item及justify-content都是 center */
 .foot {
