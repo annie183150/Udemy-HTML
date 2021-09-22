@@ -1,53 +1,83 @@
-.top {
-  text-align: center;
-  color: blueviolet;
-  font-size: 2rem;
-}
-form.eyeTest label {
-  font-size: 1.2rem;
-}
-form {
-  font-family: "Roboto", sans-serif;
-}
-.box h3 {
-  background-color: rgb(235, 150, 202);
-  color: rgb(229, 236, 220);
-  border: 2px ridge rgba(170, 50, 220, 0.6);
-  text-align: center;
+/* 用通用標籤設定，將整個網頁的 padding跟margin設為0*/
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
-button {
-  padding: 2px 10px;
+.top {
+  background-color: bisque;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
 }
-.box {
-  width: 420px;
-  border: thick double #32a1ce;
-  margin: 10px;
+.top img {
+  height: 230px;
+  width: 100%;
+}
+.toolBar {
+  position: sticky;
+  width: 100%;
+  background-color: cadetblue;
+  opacity: 0.85;
+}
+/* 不能用外面的container 來設定flex 要用裡面的 ul 設定，若導覽列前面要有padding也是設在這裡*/
+.toolBar ul {
+  padding-left: 20px;
+  display: flex;
+  list-style-type: none;
+}
+.toolBar ul li {
+  display: flex;
+}
+.toolBar ul li img {
+  width: 30px;
+  height: 30px;
+}
+/* 超連結不要有下修飾線，text-decoration:none; */
+.toolBar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px 60px;
+  transition: 0.25;
+}
+.toolBar ul li a:hover {
+  color: rgb(48, 170, 48);
+  background-color: rgb(46, 92, 77);
+}
+.active {
+  background-color: aqua;
 }
 .content {
-  width: 1600px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
 }
+.left {
+  flex: 3 1 800px;
+  border: 3px solid rgb(88, 162, 211);
+  margin: 20px 20px;
+}
+/* 將right設成flex container，flex-diraction:colim 就可以垂直排列標籤內容 align-item跟排列方式垂直的方向位置*/
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 300px;
+  border: 3px solid rgb(156, 185, 25);
+  margin: 20px 20px;
+}
+/* 水平方向的flex-diration則設align-item及justify-content都是 center */
 .foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50px;
-  color: azure;
-  font-size: 20px;
-  text-align: center;
-  background-color: chocolate;
-  position: fixed;
-  bottom: 0;
+  background-color: salmon;
+  font-size: 1.5rem;
+  color: aliceblue;
 }
-.foot div {
-  margin-top: auto;
-}
-table,
-        th,
-        td {
-            border-collapse: collapse;
-            border: 1px solid black;
-            padding: 20px;
-        }

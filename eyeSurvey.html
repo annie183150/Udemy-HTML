@@ -12,16 +12,16 @@
 
 </head>
 <body>
-    <section class="eye top">
+    <section class="survey top">
         <h1 class="colorset"> &#127774;用眼問卷調查&#127774;</h1>
         <hr/>
     </section>
-    <section calss="eye content">
-        <form class="eyeTest" action=""method=""><!--用於傳送資料給後端，method預設值默認get-->
-            <label class="colorset minText" for="getName">姓名</label>
+    <section calss="survey content">
+        <form class="eyeSurvey" action=""method=""><!--用於傳送資料給後端，method預設值默認get-->
+            <label class="surveyLable" for="getName">姓名</label>
             <input id="getName"type="text" name="inputName" placeholder="請輸入真實姓名"/> <!--name屬性，有設變數時，資料才能傳送到後端-->
             <br/><!--讓選擇框變成直式排列-->
-            <label for="gender">性別</label>   
+            <label class="surveyLable" for="gender">性別</label>   
             <select name="gender" id="gender" required>
                 <option ></option>
                 <option value="male">男性</option>
@@ -29,7 +29,7 @@
                 <option value="other">其他</option>
             </select>
             <br/>
-            <label for="getPhone">電話</label>
+            <label class="surveyLable" for="getPhone">電話</label>
             <input id="getPhone"type="text" name="inputPhone"/> 
             <br/>
             <input 
@@ -39,7 +39,7 @@
                 value="doctorCheck"
                 checked
             /><!--name屬性，有設變數時，資料才能傳送到後端，而傳送的值就是value-->
-            <label class="bigText" for="chickBox">是否有定期看眼科習慣</label>
+            <label class="surveyLable" class="bigText" for="chickBox">是否有定期看眼科習慣</label>
             <br/>
             <label for="area">居住地區</label>
          <input list="areaList"type="text" name="area" id="area">
@@ -49,13 +49,13 @@
                 <option value="高雄">高雄</option>
             </datalist>   
             <br/>
-            <label for="email">請輸入信箱</label>
+            <label class="surveyLable" for="email">請輸入信箱</label>
             <input id="email"type="email"name="email" required/>
             <br/>
-            <label for="age">年齡</label>
+            <label class="surveyLable" for="age">年齡</label>
             <input id="age" type="number" name="age" value="18" min="0" max="150"/>
             <br/>
-            <label for="age">身高</label>
+            <label class="surveyLable" for="age">身高</label>
             <input id="hight" 
                     type="number" 
                     name="hight" 
@@ -65,7 +65,7 @@
 			        step="0.1"
             />
             <br/>
-            <button type="submit">提交表單</button> <!--button標籤必須放在<form>裡面才有提交資料的功能-->
+            <button class="normal" type="submit">提交表單</button> <!--button標籤必須放在<form>裡面才有提交資料的功能-->
         </form>
     </section>
     <section class="foot">

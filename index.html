@@ -1,58 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
 <!--透過語言設定，電腦能快速辨識網站語言類型，提醒用戶是否需要翻譯-->
-
+<html lang="zh-Hant">
 <head>
     <meta charset="utf-8" />
     <!--utf-8幾乎包含了世界上所有的字及語言的種類，所以大多選擇使用-->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>健康中心</title>
+    <!--設定所有分頁都是新開頁面-->
     <base target="_blank" />
     <link rel="stylesheet" href="./sytle.css" />
 </head>
-
 <body>
     <section class="index top">
-        <h1>東興國小健康中心</h1>
-        <img src="../Udemy HTML/images/index.title.png" alt="title picture" />
+        <!-- <h1>東興國小健康中心</h1> -->
+        <img class="topPicture" src="./images/indexTitle.png" alt="title picture" />
+    </section>
+    <section class="toolBar">
+        <ul>
+            <!--#代表本頁面不須重新整理-->
+            <li><img src="./images/house-black-silhouette-without-door.png" alt="首頁"><a class="active" href="#">首頁</a></li>
+            <li><img src="./images/tooth.png" alt=""><a href="./oral.html">口腔保健</a></li>
+            <li><img src="./images/eye.png" alt=""><a href="./eye.html">視力保健</a></li>
+            <li><img src="./images/no-smoking.png" alt=""><a href="./smoke.html">菸檳防治</a></li>
+            <li><img src="./images/dumbbell.png" alt=""><a href="./weight.html">健康體位</a></li>
+            <li><img src="./images/image.png" alt=""><a href="./picture.html">活動照片</a></li>
+        </ul>
     </section>
     <section class="index content">
-        <section class="box">
-            <h3>視力保健</h3>
-            <a href="./eyeSurvey.html">用眼問卷調查</a>
+        <section class="left">
+            <div>最新內容</div>
+            <hr>
         </section>
-        <section class="box">
-            <h3>口腔保健</h3>
-            <p></p>
+        <section class="right">
+            <div>相關連結</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.997850101214!2d120.81770431536827!3d24.2068548771015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691ebeadcc2725%3A0x70200bc0aeb70031!2z5Y-w5Lit5biC5paw56S-5Y2A5p2x6IiI5ZyL5rCR5bCP5a24!5e0!3m2!1szh-TW!2stw!4v1631864069590!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-        <section class="box" style="background-image: url(./images/smoke.jpg) ">
-            <h3>菸害防制</h3>
-            <p>世界衛生組織指出，菸草每年使800多萬人失去生命，其中有700多萬人緣於直接使用菸草，有大約120萬人屬於
-                觸二手菸霧的非吸菸者，整體而言，平均不到5秒就有1人因菸害死亡。在臺灣，每年約有2萬5,000名死於吸菸及
-                近3,000名死於二手菸害，平均不到20分鐘就有1人因菸害而失去生命。為有效控制菸害問題，我國自86年起開始實
-                施菸害防制法，訂定禁菸場所、菸業與販賣者管理、戒菸、教育、廣告等規範，至91年菸酒稅法實施，開徵菸品健
-                康福利捐（以下簡稱菸捐），始有經費「專款專用」挹注菸害防制工作推動。並於94年與民間反菸團體的努力下由
-                總統完成批准「菸草控制綱要公約（The Framework Convention on Tobacco Control，簡稱FCTC）」，依循該公約
-                精神，循序推動各項防制措施，於96年通過菸害防制法修正(於98年施行)，重大措施包括調高菸捐20元、擴大禁菸範圍、增
-                加菸品標示警示圖文、規範菸品陳列展示、限制菸品廣告促銷與贊助，以及申報菸品成分和毒性資料，同時善用菸捐推動各
-                項健康措施，這是臺灣菸害防制法的重大變革，與世界同步，也是立法管制菸害之重要里程碑。
-
-            </p>
-        </section>
-        <section class="box">
-            <h3>健康體位</h3>
-            <p></p>
-        </section>
+       
     </section>
-    <section class="index foot">
-
-    </section>
-    <div>
-        <p>學生的健康，我們共同維護</p>
-    </div>
-
-
-
+    <section class="foot">
+        <div>
+            <p>學生的健康，我們共同維護</p>
+        </div>
+    </section>    
 </body>
 
 </html>
